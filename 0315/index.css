@@ -1,0 +1,111 @@
+*{
+    /* border: solid 2px black; */
+    font-family: 微軟正黑體;
+    font-size: 14px;
+}
+html,body{
+    background-color: #ff7526;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    margin: 0px;
+}
+.box{
+    width: 380px;
+    background-color: #fff;
+    /*以下指令產生陰影，X位移，Y位移，陰影的範圍，顏色*/
+    box-shadow: 0px 0px 35px rgba(0,0,0,0.4);
+    transition: 0.5s;
+}
+/*hover為滑鼠滑入時，產生的格式*/
+.box:hover{
+    box-shadow: 5px 5px 60px rgba(0,0,0,1);
+    transform: translate(-5px,-5px);
+}
+.top{
+    height:330px;
+    background-image:url(https://pic.pimg.tw/sidney6811/1529508979-1559019819_n.jpg);
+    background-size: cover;
+    position: relative;   /*讓框內的文字為相對位置*/
+  }
+  .top .name{
+    color: white;
+    font-size: 24px;
+    letter-spacing: 2px; /*字間距離調大*/
+    position: absolute;  
+    left: 0px;
+    bottom: 0px;
+    margin:0px; /*沒輸入這行，會因為h3預設與下框有距離*/
+    /* background-color: rgba(0,0,0,0.2); */
+    background: linear-gradient(transparent 0%,black 100%);
+    width: 100%;
+    padding-top: 30px;
+    
+  }  
+  .top .name .smallext{
+    font-size: 10px;
+  }
+  .cirbutton{
+    width: 50px;
+    height: 50px;
+    background-color: #ff7526;
+    position: absolute; /*設定cirbutton的絕對位置*/
+    right: 30px; /*cirbutton右邊距離box右邊之距離值*/
+    bottom: -20px;
+    border-radius: 25px; /*設定寬高的一半圓弧，就會變成一個圓弧*/
+  }
+  .tag{
+    width: 30px;
+    height: 80px;
+    background-color: #ff7526;
+    position: absolute;
+    right: 20px;
+    top:0px;
+
+  }
+  .bottom{
+    padding: 10px 20px 20px 20px;/*上 右 下 左 的內距*/
+  }
+  .bottom li{
+    padding: 5px 0px; /*上下 左右 的內距*/
+  }
+  .bottom h3{
+    display: inline-block;
+    margin: 5px;
+  }
+  .bottom ul{
+    list-style: none;/*取消list左邊每個項目的圓圈*/
+    padding-left: 0px ;/*左邊的內距設定為0px*/
+  }
+  .buttons .btn{
+    display: inline-block;
+    letter-spacing: 2px;
+    padding: 10px 25px;
+    border: solid 2px black
+  }
+  .btnNews{
+    float: right;/*float為一個浮動位置，設定他靠右*/
+    background-color: #e7c8b6;
+    transition: 0.5s;
+  }
+  .btnNews:hover{
+    background-color: #aca7a5;
+  }
+  .buttons{
+    margin-top: 30px;
+  }
+  .btnWebsite{
+    background-color: #ff7526;
+    transition: 0.5s;
+  }
+  .btnWebsite:hover{
+    background-color: #f1b08a;
+  }
+  /*取消系統原本設定超連結格式*/
+  a{
+    color: initial;
+    text-decoration: initial;
+  }
